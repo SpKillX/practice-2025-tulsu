@@ -789,7 +789,7 @@
       }
     }
     
-@media (max-width: 1920px) {
+@media (max-width: 1920px min-width: 993px) {
 .about__main-image {
       width: 80%;
       height: 80%;
@@ -1013,7 +1013,7 @@
     }
     
 
-@media (max-width: 1920px) {
+@media (max-width: 1920px min-width: 993px) {
 .team__image-wrapper {
       flex: 0 0 45%;
       display: flex;
@@ -1673,7 +1673,7 @@
       }
     }
 
-@media (max-width: 1920px) {
+@media (max-width: 1920px min-width: 993px) {
 .specialties__square {
       position: absolute;
       width: 15vw;
@@ -2097,7 +2097,7 @@
       }
     }
 
-      @media (max-width: 1080px) { 
+      @media (max-width: 1080px min-width: 993px) { 
        .events__container {
       position: relative;
       z-index: 2;
