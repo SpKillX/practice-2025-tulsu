@@ -697,6 +697,82 @@
     </div>
   </section>
 
+<div class="auth-modal" id="authModal" style="display: none;">
+  <div class="auth-container">
+    <button class="auth-close">&times;</button>
+    
+    <div class="auth-form" id="loginForm">
+      <h2>Login</h2>
+      <div class="form-group">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="loginPassword" placeholder="Password" required>
+      </div>
+      <button type="button" class="auth-btn" id="loginBtn">Sign In</button>
+      <div class="auth-links">
+        <a href="#" id="showRegister">Create account</a>
+        <a href="#" id="showForgot">Forgot password?</a>
+      </div>
+    </div>
+    
+<div class="auth-form" id="registerForm" style="display:none">
+  <h2>Register</h2>
+  <div class="form-group">
+    <input type="text" id="regName" placeholder="Full Name" required>
+  </div>
+  <div class="form-group">
+    <input type="email" id="regEmail" placeholder="Email" required>
+  </div>
+  <div class="form-group">
+    <input type="tel" id="regPhone" placeholder="Mobile Number" required>
+  </div>
+  <div class="form-group">
+    <input type="password" id="regPassword" placeholder="Password" required>
+  </div>
+  <div class="form-group">
+    <input type="password" id="regConfirm" placeholder="Confirm Password" required>
+  </div>
+  <button type="button" class="auth-btn" id="registerBtn">Sign Up</button>
+  <div class="auth-links">
+    <a href="#" id="showLogin">Already have an account?</a>
+  </div>
+</div>
+    
+    <div class="auth-form" id="forgotForm" style="display:none">
+      <h2>Reset Password</h2>
+      <div class="form-group">
+        <input type="email" id="forgotEmail" placeholder="Your Email" required>
+      </div>
+      <button type="button" class="auth-btn" id="sendCodeBtn">Send Code</button>
+      <div class="auth-links">
+        <a href="#" id="showLoginFromForgot">Back to login</a>
+      </div>
+    </div>
+    
+    <div class="auth-form" id="codeForm" style="display:none">
+      <h2>Verify Code</h2>
+      <div class="form-group">
+        <input type="text" id="verifyCode" placeholder="Enter 6-digit code" required>
+      </div>
+      <button type="button" class="auth-btn" id="verifyCodeBtn">Verify</button>
+    </div>
+    
+    <div class="auth-form" id="newPasswordForm" style="display:none">
+      <h2>New Password</h2>
+      <div class="form-group">
+        <input type="password" id="newPassword" placeholder="New Password" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="confirmNewPassword" placeholder="Confirm Password" required>
+      </div>
+      <button type="button" class="auth-btn" id="savePasswordBtn">Save Password</button>
+    </div>
+    
+    <div class="auth-message" id="authMessage"></div>
+  </div>
+</div>
+
   <!-- Map Section -->
   <section class="map">
     <div id="map" class="map__container"></div>
@@ -713,8 +789,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="map.js"></script>
-<script src="scroll.js"></script>
+<script src="scripts.js"></script>
 
 
   

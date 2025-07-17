@@ -2482,3 +2482,139 @@
         height: 300px;
       }
     }
+
+.auth-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 10000;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  background: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  margin: 20px;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-btn:hover {
+  background: #e6b800;
+}
+
+.auth-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.auth-links a {
+  color: #666;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+.auth-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+}
+
+.auth-message.success {
+  background: #dff0d8;
+  color: #3c763d;
+}
+
+.auth-message.error {
+  background: #f2dede;
+  color: #a94442;
+
+@media (max-width: 576px) {
+  .auth-container {
+    max-width: 100%;
+    padding: 20px;
+    top: 0;
+    transform: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group input {
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+}
+  
+  .auth-btn {
+    padding: 10px;
+  }
+}
+
+#regPhone {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
