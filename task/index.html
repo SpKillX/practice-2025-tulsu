@@ -13,17 +13,19 @@
   <link href="https://fonts.cdnfonts.com/css/tensor-sans" rel="stylesheet">
   <!-- Yandex Maps API -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU" type="text/javascript"></script>
-  <link rel="stylesheet" href="index.css">
-  
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href="index.css">
+
 </head>
 <body>
-  <div class="main-container">
+   <div class="main-container">
     <!-- Mobile menu backdrop -->
     <div class="mobile-backdrop" id="mobileBackdrop"></div>
 
     <!-- Header -->
     <header class="header" id="main-header">
-      <!-- Mobile logo-->
+      <!-- Mobile logo -->
       <div class="mobile-logo d-lg-none">
         <div class="header__logo">
           <svg width="70" height="70" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,31 +46,34 @@
       </div>
       
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="navbar-toggler-area">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-          
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item nav-item-left"><a class="nav-link" href="#">HOME</a></li>
-              <li class="nav-item nav-item-left"><a class="nav-link" href="#">ABOUT</a></li>
-              <li class="nav-item nav-item-left"><a class="nav-link" href="#">TEAM</a></li>
-              <li class="nav-item nav-item-left"><a class="nav-link" href="#">BOOKING</a></li>
-              
-              <li class="nav-item nav-item-right"><a class="nav-link" href="#">MENU</a></li>
-              <li class="nav-item nav-item-right"><a class="nav-link" href="#">GALERIE</a></li>
-              <li class="nav-item nav-item-right"><a class="nav-link" href="#">EVENTS</a></li>
-              <li class="nav-item nav-item-right"><a class="nav-link" href="#">CONTACT</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <div class="container-fluid">
+    <div class="navbar-toggler-area">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav-container">
+<ul class="navbar-nav navbar-nav-right">
+  <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+  <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+  <li class="nav-item"><a class="nav-link" href="#team">TEAM</a></li>
+  <li class="nav-item"><a class="nav-link" href="#booking">BOOKING</a></li>
+</ul>
+
+<ul class="navbar-nav navbar-nav-left">
+  <li class="nav-item"><a class="nav-link" href="#menu">MENU</a></li>
+  <li class="nav-item"><a class="nav-link" href="#events">EVENTS</a></li>
+  <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+  <li class="nav-item"><a class="nav-link" href="#login">LOGIN</a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+</nav>
     </header>
 
-    <!-- Decorative lines for desktop -->
     <div class="content-lines d-none d-lg-block">
       <div class="content-line"></div>
       <div class="content-line"></div>
@@ -78,16 +83,13 @@
     <div class="vertical-line vertical-line--right d-none d-lg-block"></div>
     <div class="vertical-line vertical-line--center d-none d-lg-block"></div>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero__background"></div>
       
-      <!-- Schedule (desktop) -->
       <div class="schedule d-none d-lg-block">
         <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
       </div>
       
-      <!-- Hero Content -->
       <div class="hero__content">
         <h2 class="hero__subtitle">RESTAURANT</h2>
         <h1 class="hero__title">HUNGRY PEOPLE</h1>
@@ -96,12 +98,10 @@
           <button class="hero__btn hero__btn--secondary">EXPLORE</button>
         </div>
         
-        <!-- Schedule (mobile) -->
         <div class="schedule-mobile d-lg-none">
           <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
         </div>
         
-        <!-- Scroll Button -->
         <div class="hero__scroll">
           <div class="hero__scroll-circle">
             <i class="fas fa-chevron-down hero__scroll-icon"></i>
@@ -109,7 +109,6 @@
         </div>
       </div>
       
-      <!-- Social Media Icons -->
       <div class="social">
         <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
@@ -118,25 +117,29 @@
     </section>
   </div>
 
-  <!-- About Section (from About full.txt) -->
+  <!-- About Section-->
   <section class="about" id="about">
     <div class="about__container">
       <div class="about__content">
-        <div class="about__text">
-          <h2 class="about__title">About Us</h2>
-          <p class="about__intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto culpa dignissimos, nobis cumque recusandae quos!</p>
-          <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quidem quis necessitatibus nostrum voluptatem natus pariatur in.</p>
+        <div class="about__text-wrapper">
+          <div class="about__text">
+            <h2 class="about__title">About us</h2>
+            <p class="about__intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto culpa dignissimos, nobis cumque recusandae quos!</p>
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quidem quis necessitatibus nostrum voluptatem natus pariatur in.</p>
+          </div>
         </div>
         
-        <div class="about__image">
-          <img src="https://sun9-23.userapi.com/impg/BYJlzXfdEyTmonp7tYyp4mEdsStqHqXLeiC6EA/KXnrwIvjVeA.jpg?size=604x604&quality=96&sign=9d9dc40da495cb679b50f2577cbdd917&c_uniq_tag=C9XmCZfogQOmf49TNP_h_23bc3m7OGPQFSo8TudUDK0&type=album" alt="Restaurant Interior" class="about__main-image">
-          <div class="about__square"></div>
+        <div class="about__image-wrapper">
+          <div class="about__image">
+            <img src="https://sun9-23.userapi.com/impg/BYJlzXfdEyTmonp7tYyp4mEdsStqHqXLeiC6EA/KXnrwIvjVeA.jpg?size=604x604&quality=96&sign=9d9dc40da495cb679b50f2577cbdd917&c_uniq_tag=C9XmCZfogQOmf49TNP_h_23bc3m7OGPQFSo8TudUDK0&type=album" alt="Restaurant Interior" class="about__main-image">
+            <div class="about__square"></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Team Section (from Team full.txt) -->
+  <!-- Team Section-->
   <section class="team" id="team">
     <div class="team__container">
       <div class="team__header">
@@ -162,15 +165,15 @@
     </div>
   </section>
 
-  <!-- Booking Section (from Booking full.txt) -->
+  <!-- Booking Section-->
   <section class="booking" id="booking">
     <div class="booking__container">
       <div class="booking__content">
         <div class="booking__form-wrapper">
           <h2 class="booking__title">Book a Table</h2>
           
-          <form class="booking__form" action="#" method="POST">
-            <div class="booking__input-group">
+	<form id="bookingForm" class="booking__form">
+                     <div class="booking__input-group">
               <input type="text" id="name" class="booking__input" placeholder="Name" required>
               <input type="email" id="email" class="booking__input" placeholder="Email" required>
             </div>
@@ -189,7 +192,7 @@
               <input type="date" id="date" class="booking__input" placeholder="Date (mm/dd)" required>
               <select id="time" class="booking__input" required>
                 <option value="" disabled selected>Time</option>
-                <option value="12:00 PM">12:00 PM</option>
+                <option value="12:00 PM">12:00 M</option>
                 <option value="1:00 PM">1:00 PM</option>
                 <option value="2:00 PM">2:00 PM</option>
                 <option value="3:00 PM">3:00 PM</option>
@@ -200,8 +203,9 @@
                 <option value="8:00 PM">8:00 PM</option>
               </select>
             </div>
-            <button type="submit" class="booking__btn">BOOK NOW</button>
-          </form>
+             <div id="messageContainer"></div>
+  <button type="submit" class="booking__btn">BOOK NOW</button>
+</form>
         </div>
         
         <div class="booking__image-wrapper">
@@ -216,7 +220,7 @@
     </div>
   </section>
 
-  <!-- Specialties Section (from specialties full.txt) -->
+  <!-- Specialties Section-->
   <section class="specialties" id="specialties">
     <div class="specialties__container">
       <div class="specialties__header">
@@ -295,7 +299,7 @@
     </div>
   </section>
 
-  <!-- Menu Section (from Menu full.txt) -->
+  <!-- Menu Section-->
   <section class="menu" id="menu">
     <div class="container">
       <div class="menu__header">
@@ -600,7 +604,7 @@
     </div>
   </section>
 
-  <section class="events">
+  <section class="events" id="events">
     <div class="events__overlay"></div>
     <div class="container events__container">
       <div class="events__header">
@@ -655,7 +659,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <div class="contact__header">
         <h2 class="contact__title">CONTACT US</h2>
@@ -705,10 +709,14 @@
     </div>
   </footer>
 
+  <!-- Bootstrap JS Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="map.js"></script>
-  <script src="scroll.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="map.js"></script>
+<script src="scroll.js"></script>
+
 
   
-  </body>
+</body>
 </html>
