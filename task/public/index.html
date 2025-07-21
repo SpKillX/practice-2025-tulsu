@@ -15,7 +15,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -613,38 +613,17 @@
   <section class="events" id="events">
     <div class="events__overlay"></div>
     <div class="container events__container">
-      <div class="events__header">
-        <h3 class="events__subtitle">Private Events</h3>
-      </div>
-      <div class="events__grid">
-        <div class="events__pair">
-          <!-- Weddings Card -->
-          <div class="events__card">
-            <div class="events__image-container events__image-container--left">
-              <img src="https://enigmarings.ru/catimages/catalog/parnye_obruchalnye_kolca_e-601-b_752.jpg" alt="Wedding" class="events__image">
-              <div class="events__square events__square--left"></div>
-            </div>
-            <div class="events__label-box events__label-box--left">
-              <p class="events__label events__label--weddings">Weddings</p>
-            </div>
-          </div>
-          <!-- Corporate Parties Card -->
-          <div class="events__card">
-            <div class="events__label-box events__label-box--right">
-              <p class="events__label events__label--corporate">Corporate Parties</p>
-            </div>
-            <div class="events__image-container events__image-container--right">
-              <img src="https://avatars.mds.yandex.net/get-ydo/5575550/2a00000188ddad86afe0079eebf5b0e27a9b/diploma" alt="Corporate Party" class="events__image">
-              <div class="events__square events__square--right"></div>
-            </div>
-          </div>
+        <div class="events__header">
+            <h3 class="events__subtitle">Private Events</h3>
         </div>
-      </div>
-      <div class="events__contact">
-        <p>For private events please call: +40 729 131 637 / +40 726 458 782 or use the contact form.</p>
-      </div>
+        <div class="events__grid" id="events__grid">
+            <!-- Events will be dynamically inserted here -->
+        </div>
+        <div class="events__contact">
+            <p>For private events please call: +40 729 131 637 / +40 726 458 782 or use the contact form.</p>
+        </div>
     </div>
-  </section>
+</section>
 
   <!-- Gallery Section -->
   <section class="gallery">
@@ -680,7 +659,9 @@
         </div>
         
         <textarea id="message" placeholder="Message" class="contact__textarea" required></textarea>
-        
+
+        <div id="contactMessageContainer"></div>
+
         <div class="contact__footer">
           <div class="contact__info">
             <div class="contact__info-item">
@@ -796,7 +777,13 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="scripts.js"></script>
-
-  
+<script src="js/about.js"></script>
+<script src="js/team.js"></script>
+<script src="js/booking.js"></script>
+<script src="js/specialties.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/events.js"></script>
 </body>
 </html>
